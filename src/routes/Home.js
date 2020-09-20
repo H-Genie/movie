@@ -15,7 +15,7 @@ class Home extends React.Component {
       data : {
         data : {movies}
       }
-    } = await axios.get('https://yts-proxy.now.sh/list_movies.json');
+    } = await axios.get('https://yts-proxy.now.sh/list_movies.json?limit=50');
 
     this.setState({movies : movies, isLoading : false})
   }
